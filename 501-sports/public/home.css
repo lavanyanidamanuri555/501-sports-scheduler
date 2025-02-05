@@ -1,0 +1,129 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #9BC4CB, #E2FADB);
+    color: #222;
+    line-height: 1.8;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container Styling */
+.container {
+    width: 80%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: #222;
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Main Section Styling */
+.main-section {
+    background: #F0F8FF;
+    padding: 50px;
+    margin-top: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.main-section h1 {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+}
+
+.main-section p {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+    background: linear-gradient(45deg, #ff6ec7, #f39c12, #3498db);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: textAnimation 6s infinite;
+}
+
+@keyframes textAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Features List Styling */
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 25px;
+    padding: 0;
+    list-style: none;
+}
+
+.features-list li {
+    background: #fff;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.features-list li:hover {
+    transform: translateY(-8px);
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 25px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
